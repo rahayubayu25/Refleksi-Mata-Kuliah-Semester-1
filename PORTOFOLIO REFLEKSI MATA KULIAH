@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Refleksi Digital - Bayu Rahayu, S.Pd. | PPG Penjas B</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            .print-break-inside-avoid { break-inside: avoid; }
+            body { background: white !important; color: black !important; }
+            .shadow-lg, .shadow-md, .shadow-xl { box-shadow: none !important; }
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center text-white font-bold text-lg shadow-md shadow-brand-500/20">
+                        BR
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-slate-900 leading-tight">Bayu Rahayu, S.Pd.</h1>
+                        <p class="text-xs text-brand-700 font-semibold">PPG Prajabatan / Pendidikan Jasmani B</p>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                    <a href="#beranda" class="text-slate-600 hover:text-brand-600 transition-colors">Beranda</a>
+                    <a href="#ringkasan" class="text-slate-600 hover:text-brand-600 transition-colors">Sintesis Refleksi</a>
+                    <a href="#mata-kuliah" class="text-slate-600 hover:text-brand-600 transition-colors">Mata Kuliah</a>
+                    <a href="#artefak" class="text-slate-600 hover:text-brand-600 transition-colors">Artefak</a>
+                    <a href="#ppl" class="text-slate-600 hover:text-brand-600 transition-colors">PPL 1</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <button onclick="window.print()" class="px-3.5 py-1.5 rounded-lg border border-slate-300 text-slate-700 text-xs font-semibold hover:bg-slate-100 transition flex items-center gap-2">
+                        <i class="fa-solid fa-print">mod</i>
+                        <span>Cetak / PDF</span>
+                    </button>
+                    <a href="#mata-kuliah" class="px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold transition shadow-md shadow-brand-600/20">
+                        Eksplorasi Refleksi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative bg-gradient-to-b from-slate-900 via-navy-800 to-slate-900 text-white py-16 lg:py-24 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-8 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+                        Lembar Kerja 2 (LK 2) - Portofolio Refleksi Pengalaman Belajar
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        Transformasi Berpikir <br class="hidden sm:inline"/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-emerald-300 to-teal-200">
+                            Pendidik Jasmani Masa Depan
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+                        Dokumentasi komprehensif perjalanan reflektif mahasiswa PPG Prajabatan Pendidikan Jasmani. Mengintegrasikan pemikiran filosofis, keberagaman peserta didik, *deep learning*, sosiokultural, *growth mindset*, serta pengalaman mengajar nyata di <span class="text-brand-300 font-medium">SMPN 4 Ciamis</span>.
+                    </p>
+
+                    <div class="pt-4 flex flex-wrap gap-4 text-xs sm:text-sm font-semibold">
+                        <div class="bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 flex items-center gap-3">
+                            <i class="fa-solid fa-graduation-cap text-brand-400 text-xl"></i>
+                            <div>
+                                <p class="text-slate-400 text-[10px] uppercase tracking-wider">Program</p>
+                                <p class="text-white font-medium">PPG Prajabatan Penjas B</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 flex items-center gap-3">
+                            <i class="fa-solid fa-user-check text-emerald-400 text-xl"></i>
+                            <div>
+                                <p class="text-slate-400 text-[10px] uppercase tracking-wider">Nama Mahasiswa</p>
+                                <p class="text-white font-medium">Bayu Rahayu, S.Pd.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 flex items-center gap-3">
+                            <i class="fa-solid fa-school text-teal-400 text-xl"></i>
+                            <div>
+                                <p class="text-slate-400 text-[10px] uppercase tracking-wider">Lokasi PPL 1</p>
+                                <p class="text-white font-medium">SMPN 4 Ciamis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlight Card / Quick Stat -->
+                <div class="lg:col-span-4">
+                    <div class="bg-slate-800/90 border border-slate-700/80 rounded-2xl p-6 shadow-2xl backdrop-blur-sm relative">
+                        <div class="absolute -top-3 -right-3 bg-brand-500 text-slate-950 font-extrabold text-[10px] uppercase px-3 py-1 rounded-full shadow-lg">
+                            4C Framework
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-compass text-brand-400"></i>
+                            Kerangka Refleksi
+                        </h3>
+                        
+                        <div class="space-y-3 text-xs">
+                            <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-700/50 flex gap-3 items-start">
+                                <span class="bg-blue-500/20 text-blue-400 font-bold px-2 py-0.5 rounded">1</span>
+                                <div>
+                                    <strong class="text-slate-200 block">Connection (Keterkaitan)</strong>
+                                    <span class="text-slate-400">Menghubungkan teori perkuliahan dengan peran calon guru PJOK.</span>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-700/50 flex gap-3 items-start">
+                                <span class="bg-amber-500/20 text-amber-400 font-bold px-2 py-0.5 rounded">2</span>
+                                <div>
+                                    <strong class="text-slate-200 block">Challenge (Tantangan)</strong>
+                                    <span class="text-slate-400">Menguji asumsi & praktik lama vs paradigma baru yang inklusif.</span>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-700/50 flex gap-3 items-start">
+                                <span class="bg-emerald-500/20 text-emerald-400 font-bold px-2 py-0.5 rounded">3</span>
+                                <div>
+                                    <strong class="text-slate-200 block">Concept (Konsep Kunci)</strong>
+                                    <span class="text-slate-400">Prinsip dasar: UbD, ZPD, Scaffolding, Neuroplastisitas, OBT.</span>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-900/60 border border-slate-700/50 flex gap-3 items-start">
+                                <span class="bg-purple-500/20 text-purple-400 font-bold px-2 py-0.5 rounded">4</span>
+                                <div>
+                                    <strong class="text-slate-200 block">Change (Perubahan)</strong>
+                                    <span class="text-slate-400">Komitmen aksi nyata dalam perencanaan & praktik mengajar.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXECUTIVE SYNTHESIS SUMMARY -->
+    <section id="ringkasan" class="py-12 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-brand-600 font-bold uppercase tracking-widest text-xs">Ringkasan Eksekutif</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Pergeseran Paradigma Pedagogis Bayu Rahayu</h2>
+                <p class="text-slate-600 text-sm mt-2">
+                    Sintesis dari 6 mata kuliah reflektif yang membentuk fondasi profesionalitas sebagai Guru PJOK modern.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Dari Kaku & Seragam ke Kontekstual & Inklusif</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Meninggalkan asumsi kurikulum seragam dan pengajaran terpusat pada drill fisik semata. Kini memandang peserta didik secara holistik melalui profiling awal, diferensiasi, serta pemanfaatan konteks sosial-budaya lokal.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Pola Pikir Bertumbuh & Pembelajaran Mendalam</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Menggeser orientasi dari *surface learning* (skor/gerak instan) menuju *Deep Learning* berbasis *Big Idea*, *Productive Failure*, dan neuroplastisitas. Kesalahan diposisikan sebagai ruang tumbuh aman bagi murid.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center font-bold text-xl mb-4">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Fasilitator Empatis & Scaffolding Tepat Sasaran</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Bertindak sebagai *More Knowledgeable Other* (MKO) yang menerapkan *Scaffolding* berlandaskan *Zone of Proximal Development* (ZPD), menggantikan instruksi otoriter dengan pertanyaan pemantik dan tutor sebaya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN COURSES EXPLORER SECTION -->
+    <section id="mata-kuliah" class="py-16 bg-slate-100/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-brand-600 font-bold uppercase tracking-widest text-xs">Portofolio Mata Kuliah</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Refleksi Pengalaman Belajar & Artefak</h2>
+                    <p class="text-slate-600 text-sm mt-1">Pilih mata kuliah di bawah ini untuk mempelajari uraian 4C dan bukti dukung artefak.</p>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative w-full md:w-72 no-print">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                    <input type="text" id="courseSearch" onkeyup="filterCourses()" placeholder="Cari kata kunci (e.g. ZPD, Pak Dedi)..." class="w-full pl-9 pr-4 py-2 text-xs rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-sm">
+                </div>
+            </div>
+
+            <!-- COURSE TABS -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-4 custom-scrollbar no-print mb-6">
+                <button onclick="switchTab('mk1')" id="btn-mk1" class="tab-btn active px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition border border-brand-600 bg-brand-600 text-white shadow-sm">
+                    1. Filosofi Pendidikan
+                </button>
+                <button onclick="switchTab('mk2')" id="btn-mk2" class="tab-btn px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition border border-slate-300 bg-white text-slate-700 hover:bg-slate-50">
+                    2. Pemahaman Peserta Didik
+                </button>
+                <button onclick="switchTab('mk3')" id="btn-mk3" class="tab-btn px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition border border-slate-300 bg-white text-slate-700 hover:bg-slate-50">
+                    3. Pembelajaran Mendalam PJOK
+                </button>
+                <button onclick="switchTab('mk4')" id="btn-mk4" class="tab-btn px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition border border-slate-300 bg-white text-slate-700 hover:bg-slate-50">
+                    4. Perspektif Sosiokultural
+                </button>
+                <button onclick="switchTab('mk5')" id="btn-mk5" class="tab-btn px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition border border-slate-300 bg-white text-slate-700 hover:bg-slate-50">
+                    5. Pola Pikir Bertumbuh
+                </button>
+                <button onclick="switchTab('mk6')" id="btn-mk6" class="tab-btn px-4 py-2.5 rounded-xl text-xs font-bold whitespace-nowrap transition border border-slate-300 bg-white text-slate-700 hover:bg-slate-50">
+                    6. PPL 1 Terbimbing
+                </button>
+            </div>
+
+            <!-- TAB CONTENT CONTAINERS -->
+            <div id="course-container" class="space-y-8">
+                
+                <!-- MK 1 -->
+                <div id="mk1" class="course-card active bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden p-6 sm:p-8">
+                    <div class="border-b border-slate-100 pb-6 mb-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3 py-1 rounded-md bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider">Mata Kuliah 1</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-user-graduate text-brand-600 mr-1"></i> Bayu Rahayu | PPG Penjas B</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Filosofi Pendidikan dan Pendidikan Nilai</h3>
+                        
+                        <!-- Reflection Quote Banner -->
+                        <div class="mt-4 p-4 rounded-xl bg-amber-50/80 border-l-4 border-amber-500 text-slate-700 text-xs sm:text-sm italic">
+                            <p class="font-medium text-slate-800">Refleksi Pengalaman Belajar:</p>
+                            "Mata kuliah Filosofi Pendidikan dan Pendidikan Nilai membuka wawasan saya tentang pentingnya pendidikan kontekstual. Awalnya saya berpikir pendidikan harus selalu seragam dan formal, tetapi setelah menganalisis kasus Sokola Rimba melalui diskusi Tug of War dan Peta Konsep, saya memahami bahwa pendidikan yang baik adalah pendidikan yang memberdayakan tanpa mencabut peserta didik dari akar budayanya."
+                        </div>
+                    </div>
+
+                    <!-- 4C GRID -->
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-cube text-brand-600"></i> Kerangka Refleksi 4C
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
+                            <div class="flex items-center gap-2 font-bold text-blue-900 text-sm mb-2">
+                                <i class="fa-solid fa-link text-blue-600"></i>
+                                <span>1. Connection (Keterkaitan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Materi perkuliahan ini sangat berkaitan erat dengan peran saya sebagai calon guru Jasmani. Melalui studi kasus Sokola Rimba, saya memahami bahwa tugas pendidik bukan untuk memaksakan standar luar kepada peserta didik, melainkan memberikan alat pengetahuan agar mereka mampu menjaga diri dan identitasnya di tengah perubahan. Guru juga perlu bertindak sebagai fasilitator yang luwes dan penuh empati.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                            <div class="flex items-center gap-2 font-bold text-amber-900 text-sm mb-2">
+                                <i class="fa-solid fa-bolt text-amber-600"></i>
+                                <span>2. Challenge (Tantangan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Dulu saya berpikir pendidikan harus seragam, formal di dalam kelas, serta berfokus pada pemenuhan kurikulum nasional secara kaku. Namun, perkuliahan ini menantang pemikiran tersebut. Praktik nyata menunjukkan bahwa pendidikan formal kaku sering kali tidak relevan dan mengancam identitas lokal jika tidak disesuaikan dengan realitas hidup peserta didik.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                            <div class="flex items-center gap-2 font-bold text-emerald-900 text-sm mb-2">
+                                <i class="fa-solid fa-lightbulb text-emerald-600"></i>
+                                <span>3. Concept (Konsep Utama)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li><strong>Pendidikan Kontekstual & Inklusif:</strong> Pembelajaran menyatu dengan alam, budaya, dan kehidupan siswa.</li>
+                                <li><strong>Pemberdayaan & Proteksi Diri:</strong> Literasi sebagai perisai hak peserta didik, bukan penghilang tradisi.</li>
+                                <li><strong>Growth Mindset:</strong> Melihat tantangan & penolakan sebagai ruang belajar beradaptasi.</li>
+                                <li><strong>Kosongkan Gelas:</strong> Pendidik memahami kearifan lokal sebelum mengajar.</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-purple-50/60 border border-purple-100">
+                            <div class="flex items-center gap-2 font-bold text-purple-900 text-sm mb-2">
+                                <i class="fa-solid fa-arrows-rotate text-purple-600"></i>
+                                <span>4. Change (Perubahan)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li><strong>Menjadi Pendengar & Empati:</strong> Lebih banyak mendengar kebutuhan siswa dan masyarakat.</li>
+                                <li><strong>Kurikulum Melayani Realitas:</strong> Menyesuaikan metode agar fleksibel & bermakna sesuai lingkungan siswa.</li>
+                                <li><strong>Menjaga Keseimbangan:</strong> Mengajarkan ilmu baru tanpa mengikis jati diri dan kearifan lokal.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ARTEFAK PEMBELAJARAN -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-folder-open text-brand-600"></i> Analisis Artefak Pembelajaran
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Artefak Terpilih:</strong>
+                                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                    <li>Hasil Diskusi Circle of Viewpoint (Pandangan Anak Rimba)</li>
+                                    <li>Laporan Debat Tug of War (Dilema Tradisi vs Modern)</li>
+                                    <li>Peta Konsep Sintesis (I Used to Think..., Now I Think...)</li>
+                                    <li>Dokumen Manifesto Pola Pikir Bertumbuh</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Alasan Pemilihan:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Artefak-artefak tersebut secara sistematis merekam proses transformasi berpikir saya. Mulai dari melatih empati (*Circle of Viewpoint*), menimbang dilema secara kritis (*Tug of War*), merekonstruksi pemahaman (*Peta Konsep*), hingga merumuskan komitmen dan prinsip aksi nyata sebagai pendidik (*Manifesto*).
+                                </p>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Bagian Pendukung Refleksi:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    <strong>Tug of War:</strong> Kesimpulan bahwa pendidikan adalah "jembatan" & "perisai" tradisi.<br>
+                                    <strong>Peta Konsep:</strong> Pergeseran dari "Sekolah harus formal" ke "Pendidikan kontekstual & inklusif".<br>
+                                    <strong>Manifesto:</strong> Komitmen "Kosongkan gelas" dan "Kurikulum melayani realitas".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MK 2 -->
+                <div id="mk2" class="course-card hidden bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden p-6 sm:p-8">
+                    <div class="border-b border-slate-100 pb-6 mb-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3 py-1 rounded-md bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-wider">Mata Kuliah 2</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-user-graduate text-brand-600 mr-1"></i> Bayu Rahayu | PPG Penjas B</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Pemahaman tentang Peserta Didik dan Pembelajarannya</h3>
+                        
+                        <div class="mt-4 p-4 rounded-xl bg-teal-50/80 border-l-4 border-teal-500 text-slate-700 text-xs sm:text-sm italic">
+                            <p class="font-medium text-slate-800">Refleksi Pengalaman Belajar:</p>
+                            "Mata kuliah Pemahaman tentang Peserta Didik dan Pembelajarannya sangat berkaitan erat dengan peran saya sebagai calon guru Jasmani sebelum merancang dan merencanakan pembelajaran di kelas. Awalnya saya terbiasa menyusun rancangan pembelajaran secara seragam tanpa mempertimbangkan keberagaman profil siswa. Melalui materi ini, saya menyadari pentingnya melakukan profiling awal serta merancang pembelajaran berdiferensiasi."
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-cube text-brand-600"></i> Kerangka Refleksi 4C
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
+                            <div class="flex items-center gap-2 font-bold text-blue-900 text-sm mb-2">
+                                <i class="fa-solid fa-link text-blue-600"></i>
+                                <span>1. Connection (Keterkaitan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Pemahaman terhadap karakteristik, minat, gaya belajar, dan tingkat perkembangan peserta didik merupakan fondasi utama sebelum merancang dan merencanakan pembelajaran PJOK di kelas.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                            <div class="flex items-center gap-2 font-bold text-amber-900 text-sm mb-2">
+                                <i class="fa-solid fa-bolt text-amber-600"></i>
+                                <span>2. Challenge (Tantangan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Dulu terbiasa menyusun RPP secara seragam tanpa memikirkan keragaman murid. Perkuliahan ini mengubah pandangan untuk wajib melakukan *profiling* awal, merancang pembelajaran berdiferensiasi (konten, proses, produk), serta memanfaatkan media digital secara etis.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                            <div class="flex items-center gap-2 font-bold text-emerald-900 text-sm mb-2">
+                                <i class="fa-solid fa-lightbulb text-emerald-600"></i>
+                                <span>3. Concept (Konsep Utama)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li><strong>Asesmen Diagnostik/Awal:</strong> Tes, observasi, dan wawancara memetakan kesiapan & gaya belajar.</li>
+                                <li><strong>Profiling Peserta Didik:</strong> Pemetaan kemampuan, karakteristik digital, dan minat siswa.</li>
+                                <li><strong>Pembelajaran Berdiferensiasi:</strong> Memfasilitasi pilihan produk/proses & kelompok interaktif.</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-purple-50/60 border border-purple-100">
+                            <div class="flex items-center gap-2 font-bold text-purple-900 text-sm mb-2">
+                                <i class="fa-solid fa-arrows-rotate text-purple-600"></i>
+                                <span>4. Change (Perubahan)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li>Mengawali setiap pembelajaran dengan asesmen diagnostik sebelum membuat RPP/Modul Ajar.</li>
+                                <li>Menerapkan diferensiasi gaya belajar (visual, auditori, kinestetik dalam olahraga).</li>
+                                <li>Mengintegrasikan media/isu kontekstual dekat siswa untuk memacu partisipasi.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-folder-open text-brand-600"></i> Analisis Artefak Pembelajaran
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Artefak Terpilih:</strong>
+                                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                    <li>Laporan Diskusi Penyelesaian Kasus Bu Anita (Kelompok 2)</li>
+                                    <li>LK Aktivitas 4a: Rancangan Instrumen Asesmen Awal & Profiling</li>
+                                    <li>LK Aktivitas 4b: Rekomendasi Desain & Implikasi Berdiferensiasi</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Alasan Pemilihan:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Ketiga artefak mendokumentasikan secara rinci alur analisis masalah belajar nyata, proses pembuatan instrumen pemetaan peserta didik, hingga perancangan rekomendasi pembelajaran berdiferensiasi yang aplikatif.
+                                </p>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Bagian Pendukung Refleksi:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    <strong>LK 4a:</strong> Rubrik observasi, tes diagnostik, & pemetaan kelompok (tinggi, sedang, rendah).<br>
+                                    <strong>LK 4b & Kasus Bu Anita:</strong> PjBL lintas kelompok minat, platform Padlet/Jamboard, & pilihan produk berdiferensiasi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MK 3 -->
+                <div id="mk3" class="course-card hidden bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden p-6 sm:p-8">
+                    <div class="border-b border-slate-100 pb-6 mb-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3 py-1 rounded-md bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-wider">Mata Kuliah 3</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-user-graduate text-brand-600 mr-1"></i> Bayu Rahayu | PPG Penjas B</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Pembelajaran Mendalam dan Asesmen Dasar PJOK</h3>
+                        
+                        <div class="mt-4 p-4 rounded-xl bg-emerald-50/80 border-l-4 border-emerald-500 text-slate-700 text-xs sm:text-sm italic">
+                            <p class="font-medium text-slate-800">Refleksi Pengalaman Belajar:</p>
+                            "Pembelajaran Mendalam (Deep Learning) menekankan bahwa tugas guru olahraga tidak hanya melatih fisik dan keterampilan teknik (motorik), tetapi juga membentuk pemahaman makna, nilai-nilai kehidupan (kerja sama, disiplin, tanggung jawab), serta kesehatan sepanjang hayat bagi murid."
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-cube text-brand-600"></i> Kerangka Refleksi 4C
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
+                            <div class="flex items-center gap-2 font-bold text-blue-900 text-sm mb-2">
+                                <i class="fa-solid fa-link text-blue-600"></i>
+                                <span>1. Connection (Keterkaitan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Sangat relevan bagi guru PJOK untuk membentuk karakter, pemahaman makna olahraga, kerja sama, dan komitmen kesehatan sepanjang hayat murid, bukan sekadar pelatih fisik.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                            <div class="flex items-center gap-2 font-bold text-amber-900 text-sm mb-2">
+                                <i class="fa-solid fa-bolt text-amber-600"></i>
+                                <span>2. Challenge (Tantangan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Menggeser paradigma dari pengajaran tradisional yang melatih *drill* gerak berulang dan orientasi hasil akhir, menjadi pembelajaran bermakna melalui eksplorasi, investigasi, kolaborasi, dan refleksi.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                            <div class="flex items-center gap-2 font-bold text-emerald-900 text-sm mb-2">
+                                <i class="fa-solid fa-lightbulb text-emerald-600"></i>
+                                <span>3. Concept (Konsep Utama)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li><strong>Big Idea:</strong> Pemahaman universal melebihi fisik (e.g. "Kerja sama menentukan tim").</li>
+                                <li><strong>Pertanyaan Esensial:</strong> Pertanyaan HOTS memicu pemikiran kritis.</li>
+                                <li><strong>4 Tahapan Bermakna:</strong> Eksplorasi, Investigasi, Kolaborasi, dan Refleksi.</li>
+                                <li><strong>Asesmen Autentik:</strong> Penilaian proses, sikap, keterampilan & *self-assessment*.</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-purple-50/60 border border-purple-100">
+                            <div class="flex items-center gap-2 font-bold text-purple-900 text-sm mb-2">
+                                <i class="fa-solid fa-arrows-rotate text-purple-600"></i>
+                                <span>4. Change (Perubahan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Menyusun Modul Ajar PJOK yang diawali dari *Big Idea* dan Pertanyaan Esensial, bukan *drill* teknis. Menyediakan ruang eksplorasi, kolaborasi, dan refleksi rutin akhir sesi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-folder-open text-brand-600"></i> Analisis Artefak Pembelajaran
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Artefak Terpilih:</strong>
+                                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                    <li>Studi Kasus Pembelajaran Lokomotor SD Harapan Bunda (Pak Dedi)</li>
+                                    <li>Tabel Perbandingan Tujuan Tradisional vs. Mendalam</li>
+                                    <li>Bagan 4 Tahapan Penyusunan Perencanaan Pembelajaran</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Alasan Pemilihan:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Kasus Pak Dedi menjadi contoh nyata transformasi dari pengajaran tradisional membosankan ke pembelajaran bermakna. Tabel perbandingan memperjelas batas konsep, dan bagan 4 tahapan menjadi panduan *framework* langkah demi langkah.
+                                </p>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Bagian Pendukung Refleksi:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    <strong>Kasus Pak Dedi:</strong> Pertanyaan pemantik ("Mengapa harus bisa lari?") & skenario "menyeberangi sungai kecil".<br>
+                                    <strong>Tabel & Bagan:</strong> Pergeseran produk pendek ke keterampilan hidup panjang & tahapan desain pembelajaran.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MK 4 -->
+                <div id="mk4" class="course-card hidden bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden p-6 sm:p-8">
+                    <div class="border-b border-slate-100 pb-6 mb-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3 py-1 rounded-md bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider">Mata Kuliah 4</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-user-graduate text-brand-600 mr-1"></i> Bayu Rahayu | PPG Penjas B</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Perspektif Sosiokultural Dalam Pendidikan Indonesia</h3>
+                        
+                        <div class="mt-4 p-4 rounded-xl bg-indigo-50/80 border-l-4 border-indigo-500 text-slate-700 text-xs sm:text-sm italic">
+                            <p class="font-medium text-slate-800">Refleksi Pengalaman Belajar:</p>
+                            "Penerapan Scaffolding pada Zone of Proximal Development (ZPD) berkorelasi langsung dengan peran calon guru. Peran utama guru bukan sekadar menyampaikan informasi, melainkan fasilitator yang memberikan bantuan pas, tepat sasaran, dan bertahap hingga murid mandiri."
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-cube text-brand-600"></i> Kerangka Refleksi 4C
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
+                            <div class="flex items-center gap-2 font-bold text-blue-900 text-sm mb-2">
+                                <i class="fa-solid fa-link text-blue-600"></i>
+                                <span>1. Connection (Keterkaitan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Penataan bantuan belajar melalui ZPD dan Scaffolding memungkinkan guru PJOK mendampingi peserta didik dengan berbagai latar belakang sosial dan kemampuan motorik yang berbeda.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                            <div class="flex items-center gap-2 font-bold text-amber-900 text-sm mb-2">
+                                <i class="fa-solid fa-bolt text-amber-600"></i>
+                                <span>2. Challenge (Tantangan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Mengubah kebiasaan memberi jawaban/solusi instan secara utuh menjadi bantuan mikro bertahap (*gradual release of responsibility*), pertanyaan pemantik, serta memberdayakan tutor sebaya.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                            <div class="flex items-center gap-2 font-bold text-emerald-900 text-sm mb-2">
+                                <i class="fa-solid fa-lightbulb text-emerald-600"></i>
+                                <span>3. Concept (Konsep Utama)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li><strong>ZPD:</strong> Jarak antara kemampuan mandiri murid dan potensi dengan bantuan.</li>
+                                <li><strong>Scaffolding:</strong> Dukungan sementara (kognitif, emosional) yang perlahan ditarik.</li>
+                                <li><strong>More Knowledgeable Others (MKO):</strong> Teman sebaya sebagai agen pendukung belajar.</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-purple-50/60 border border-purple-100">
+                            <div class="flex items-center gap-2 font-bold text-purple-900 text-sm mb-2">
+                                <i class="fa-solid fa-arrows-rotate text-purple-600"></i>
+                                <span>4. Change (Perubahan)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li>Menyiapkan pemodelan (*modeling*) dan mengurai instruksi menjadi langkah kecil.</li>
+                                <li>Merespons kesulitan murid dengan pertanyaan reflektif, bukan jawaban langsung.</li>
+                                <li>Mengintegrasikan tutor sebaya (MKO) dan panduan belajar bervariasi di kelas.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-folder-open text-brand-600"></i> Analisis Artefak Pembelajaran
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Artefak Terpilih:</strong>
+                                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                    <li>Esai Analisis Kasus Fajar (LK Individu)</li>
+                                    <li>Peta Konsep Topik 7 (Pembelajaran Aktif & Bermakna Kasus Fajar)</li>
+                                    <li>Refleksi dan Tindak Lanjut Aksi Guru</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Alasan Pemilihan:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Ketiga artefak saling melengkapi mendokumentasikan pemahaman teoritis hingga aksi nyata: analisis kasus, visualisasi kerangka ZPD & Scaffolding, serta komitmen rencana aksi guru.
+                                </p>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Bagian Pendukung Refleksi:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    <strong>Esai Fajar:</strong> Pemodelan kognitif & MKO menurunkan kecemasan murid.<br>
+                                    <strong>Peta Konsep & Refleksi:</strong> Hubungan Scaffolding, ZPD, Diferensiasi, serta 7 poin strategi konkret di kelas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MK 5 -->
+                <div id="mk5" class="course-card hidden bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden p-6 sm:p-8">
+                    <div class="border-b border-slate-100 pb-6 mb-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3 py-1 rounded-md bg-rose-50 text-rose-700 text-xs font-bold uppercase tracking-wider">Mata Kuliah 5</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-user-graduate text-brand-600 mr-1"></i> Bayu Rahayu | PPG Penjas B</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">Pola Pikir Bertumbuh (Growth Mindset) Dalam Pembelajaran</h3>
+                        
+                        <div class="mt-4 p-4 rounded-xl bg-rose-50/80 border-l-4 border-rose-500 text-slate-700 text-xs sm:text-sm italic">
+                            <p class="font-medium text-slate-800">Refleksi Pengalaman Belajar:</p>
+                            "Materi ini mengajarkan bahwa kemampuan fisik, kognitif, dan emosional siswa bukanlah hal yang tetap (fixed), melainkan dapat dikembangkan melalui penguatan jalur koneksi saraf (neuroplastisitas). Guru perlu merespons kesalahan secara aman dan berfokus pada proses."
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-cube text-brand-600"></i> Kerangka Refleksi 4C
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
+                            <div class="flex items-center gap-2 font-bold text-blue-900 text-sm mb-2">
+                                <i class="fa-solid fa-link text-blue-600"></i>
+                                <span>1. Connection (Keterkaitan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Menyadari bahwa performa olahraga siswa dapat dilatih via neuroplastisitas. Mengarahkan guru untuk memberi umpan balik proses, menciptakan rasa aman, dan dorongan motivasi sepanjang hayat.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                            <div class="flex items-center gap-2 font-bold text-amber-900 text-sm mb-2">
+                                <i class="fa-solid fa-bolt text-amber-600"></i>
+                                <span>2. Challenge (Tantangan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Membuka pandangan dari *Surface Learning* & *Constraint-Based Thinking* (berfokus pada rintangan/fasilitas terbatas) menuju *Opportunity-Based Thinking* (solusi & inovasi) dan *Productive Failure*.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                            <div class="flex items-center gap-2 font-bold text-emerald-900 text-sm mb-2">
+                                <i class="fa-solid fa-lightbulb text-emerald-600"></i>
+                                <span>3. Concept (Konsep Utama)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li><strong>Neuroplastisitas:</strong> Otak berkembang via latihan ("Use it or lose it").</li>
+                                <li><strong>CBT vs OBT:</strong> Mengubah hambatan (ancaman) menjadi peluang solusi.</li>
+                                <li><strong>TTM ke BUM:</strong> Mengubah "Talent, Takdir, Menghindar" jadi "Belajar, Usaha, Menerima".</li>
+                                <li><strong>Prinsip 4Cs:</strong> Creativity, Critical Thinking, Communication, Collaboration.</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-purple-50/60 border border-purple-100">
+                            <div class="flex items-center gap-2 font-bold text-purple-900 text-sm mb-2">
+                                <i class="fa-solid fa-arrows-rotate text-purple-600"></i>
+                                <span>4. Change (Perubahan)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li>Menerapkan pujian berbasis proses & ketekunan, bukan sekadar bakat.</li>
+                                <li>Menggunakan narasi <em class="text-brand-700 font-semibold">"The Power of Yet"</em> ("Saya belum bisa, tapi sedang belajar").</li>
+                                <li>Normalisasi kesalahan (*fail fast, iterate quickly*) di lapangan/kelas.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-folder-open text-brand-600"></i> Analisis Artefak Pembelajaran
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Artefak Terpilih:</strong>
+                                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                    <li>LK 2.1 Neuroplastisitas Otak</li>
+                                    <li>LK 2.2 Belajar dari Cara Otak Belajar</li>
+                                    <li>LK 2.3 Cara Otak Melihat Tantangan (CBT vs OBT)</li>
+                                    <li>LK 2.4 Dari "Aduh Gagal" ke "Saya Bisa!"</li>
+                                    <li>Modul "Prinsip 4Cs & Growth Mindset"</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Alasan Pemilihan:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Seri LK 2.1 - 2.4 merekam secara runtut alur pemahaman konsep neurosains hingga aplikasi praktis strategi membangun *Growth Mindset* pada siswa.
+                                </p>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Bagian Pendukung Refleksi:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    <strong>LK 2.1 (No. 2-4):</strong> Neuroplastisitas & keberanian mencoba gerakan baru tanpa takut.<br>
+                                    <strong>LK 2.2 (No. 2,4,7):</strong> Ungkapan *The Power of Yet*, umpan balik proses, & refleksi rutin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MK 6 (PPL 1) -->
+                <div id="mk6" class="course-card hidden bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden p-6 sm:p-8">
+                    <div class="border-b border-slate-100 pb-6 mb-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3 py-1 rounded-md bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider">Mata Kuliah 6 - Praktik Lapangan</span>
+                            <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-location-dot text-brand-600 mr-1"></i> SMPN 4 Ciamis</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-2">PPL 1 Terbimbing (SMPN 4 Ciamis)</h3>
+                        
+                        <div class="mt-4 p-4 rounded-xl bg-brand-50/80 border-l-4 border-brand-500 text-slate-700 text-xs sm:text-sm italic">
+                            <p class="font-medium text-slate-800">Refleksi Pengalaman Belajar PPL:</p>
+                            "Pengalaman mengajar langsung di SMPN 4 Ciamis menghubungkan teori psikologi perkembangan dan metodologi pembelajaran dengan realitas karakter siswa remaja. RPP/Modul Ajar tidak bisa diterapkan secara kaku, melainkan membutuhkan penyesuaian strategi secara real-time di kelas."
+                        </div>
+                    </div>
+
+                    <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-cube text-brand-600"></i> Kerangka Refleksi 4C
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        <div class="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
+                            <div class="flex items-center gap-2 font-bold text-blue-900 text-sm mb-2">
+                                <i class="fa-solid fa-link text-blue-600"></i>
+                                <span>1. Connection (Keterkaitan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Teori perancangan pembelajaran, diferensiasi, dan asesmen di bangku kuliah teruji langsung saat menghadapi karakteristik murid usia remaja di SMPN 4 Ciamis.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-amber-50/60 border border-amber-100">
+                            <div class="flex items-center gap-2 font-bold text-amber-900 text-sm mb-2">
+                                <i class="fa-solid fa-bolt text-amber-600"></i>
+                                <span>2. Challenge (Tantangan)</span>
+                            </div>
+                            <p class="text-slate-700 text-xs leading-relaxed">
+                                Menepis asumsi awal bahwa Modul Ajar bersifat kaku. Keanekaragaman keaktifan & pemahaman siswa tiap kelas di SMPN 4 Ciamis menuntut fleksibilitas tinggi dan adaptasi *real-time*.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-emerald-50/60 border border-emerald-100">
+                            <div class="flex items-center gap-2 font-bold text-emerald-900 text-sm mb-2">
+                                <i class="fa-solid fa-lightbulb text-emerald-600"></i>
+                                <span>3. Concept (Konsep Utama)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li><strong>UbD & Diferensiasi:</strong> Perancangan mundur untuk merespons gaya belajar siswa SMP.</li>
+                                <li><strong>Asesmen Formatif Berkelanjutan:</strong> Memantau perkembangan fisik & konsep murid.</li>
+                                <li><strong>Classroom Management:</strong> Pendekatan afektif & komunikatif agar kelas kondusif.</li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-purple-50/60 border border-purple-100">
+                            <div class="flex items-center gap-2 font-bold text-purple-900 text-sm mb-2">
+                                <i class="fa-solid fa-arrows-rotate text-purple-600"></i>
+                                <span>4. Change (Perubahan)</span>
+                            </div>
+                            <ul class="text-slate-700 text-xs leading-relaxed list-disc list-inside space-y-1">
+                                <li>Menyusun pemetaan asesmen diagnostik lebih cermat sebelum kegiatan belajar.</li>
+                                <li>Mengintegrasikan media interaktif berbasis teknologi untuk mendongkrak keterlibatan.</li>
+                                <li>Melakukan refleksi mandiri pasca-mengajar bersama Guru Pamong & Dosen Pembimbing.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-folder-open text-brand-600"></i> Analisis Artefak Pembelajaran PPL 1
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Artefak Terpilih:</strong>
+                                <ul class="list-disc list-inside text-slate-600 space-y-1">
+                                    <li>Modul Ajar / RPP Revisi (Umpan Balik Pamong & Dosen)</li>
+                                    <li>LKPD Terdiferensiasi Siswa SMPN 4 Ciamis</li>
+                                    <li>Dokumentasi Foto/Video Kelas & Hasil Evaluasi Siswa</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Alasan Pemilihan:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Representasi lengkap siklus perencanaan, pelaksanaan, asesmen, dan evaluasi riil di SMPN 4 Ciamis.
+                                </p>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+                                <strong class="text-slate-900 block mb-1">Bagian Pendukung Refleksi:</strong>
+                                <p class="text-slate-600 leading-relaxed">
+                                    <strong>Catatan Revisi RPP:</strong> Bukti tantangan adaptasi kelas.<br>
+                                    <strong>Tugas LKPD & Umpan Balik Siswa:</strong> Bukti diferensiasi & efektivitas strategi pembelajaran.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SUMMARY TABLE SECTION FOR PRINT / COMPARISON -->
+    <section id="artefak" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-brand-600 font-bold uppercase tracking-widest text-xs">Rekapitulasi Bukti Dukung</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Matriks Artefak Pembelajaran Digital</h2>
+                <p class="text-slate-600 text-sm mt-1">Pemetaan seluruh artefak yang menjadi bukti transformasi kognitif dan keterampilan pedagogis Bayu Rahayu.</p>
+            </div>
+
+            <div class="overflow-x-auto custom-scrollbar border border-slate-200 rounded-2xl shadow-sm">
+                <table class="w-full text-left text-xs text-slate-700">
+                    <thead class="bg-slate-900 text-white uppercase tracking-wider text-[11px]">
+                        <tr>
+                            <th class="py-3.5 px-4 font-semibold">Mata Kuliah</th>
+                            <th class="py-3.5 px-4 font-semibold">Artefak Pembelajaran Terpilih</th>
+                            <th class="py-3.5 px-4 font-semibold">Fokus RefleksiUtama</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 bg-white">
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-3.5 px-4 font-bold text-slate-900">Filosofi Pendidikan</td>
+                            <td class="py-3.5 px-4">Circle of Viewpoint, Debat Tug of War, Peta Konsep Sintesis, Manifesto Growth Mindset.</td>
+                            <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-semibold">Pendidikan Kontekstual & Inklusif</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-3.5 px-4 font-bold text-slate-900">Pemahaman Peserta Didik</td>
+                            <td class="py-3.5 px-4">Kasus Bu Anita, LK 4a (Asesmen & Profiling), LK 4b (Desain Berdiferensiasi).</td>
+                            <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-teal-100 text-teal-800 font-semibold">Profiling & Diferensiasi</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-3.5 px-4 font-bold text-slate-900">Pembelajaran Mendalam PJOK</td>
+                            <td class="py-3.5 px-4">Studi Kasus Pak Dedi, Tabel Tradisional vs Deep Learning, Bagan 4 Tahapan Perencanaan.</td>
+                            <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-semibold">Big Idea & Meaningful Learning</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-3.5 px-4 font-bold text-slate-900">Perspektif Sosiokultural</td>
+                            <td class="py-3.5 px-4">Esai Analisis Kasus Fajar, Peta Konsep Topik 7, Lembar Refleksi & Aksi Guru.</td>
+                            <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-semibold">ZPD, Scaffolding & MKO</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-3.5 px-4 font-bold text-slate-900">Pola Pikir Bertumbuh</td>
+                            <td class="py-3.5 px-4">LK 2.1 (Neuroplastisitas), LK 2.2 (Cara Otak Belajar), LK 2.3 (CBT vs OBT), LK 2.4, Modul 4Cs.</td>
+                            <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-rose-100 text-rose-800 font-semibold">Neuroplastisitas & OBT</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-3.5 px-4 font-bold text-slate-900">PPL 1 Terbimbing</td>
+                            <td class="py-3.5 px-4">Modul Ajar Revisi Pamong/Dosen, LKPD Terdiferensiasi, Dokumentasi Kelas SMPN 4 Ciamis.</td>
+                            <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-brand-100 text-brand-800 font-semibold">Aplikasi Praktis SMPN 4 Ciamis</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 text-xs no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <p class="text-slate-200 font-bold text-sm">Portofolio Refleksi Digital LK 2</p>
+                <p class="mt-0.5">Bayu Rahayu, S.Pd. &bull; PPG Prajabatan Pendidikan Jasmani (Penjas B)</p>
+            </div>
+            <div class="text-right sm:text-right text-slate-500">
+                <p>Dipraktikkan di SMPN 4 Ciamis</p>
+                <p class="text-[11px] mt-0.5">&copy; 2026 - Hak Cipta Dilindungi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        function switchTab(tabId) {
+            // Hide all course cards
+            const cards = document.querySelectorAll('.course-card');
+            cards.forEach(card => card.classList.add('hidden'));
+
+            // Show target card
+            const targetCard = document.getElementById(tabId);
+            if(targetCard) {
+                targetCard.classList.remove('hidden');
+            }
+
+            // Update tab button styles
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'border-brand-600', 'shadow-sm');
+                btn.classList.add('bg-white', 'text-slate-700', 'border-slate-300');
+            });
+
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if(activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-slate-700', 'border-slate-300');
+                activeBtn.classList.add('bg-brand-600', 'text-white', 'border-brand-600', 'shadow-sm');
+            }
+        }
+
+        function filterCourses() {
+            const query = document.getElementById('courseSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.course-card');
+            
+            if(query.trim() === '') {
+                // Return to active tab
+                switchTab('mk1');
+                return;
+            }
+
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if(text.includes(query)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
